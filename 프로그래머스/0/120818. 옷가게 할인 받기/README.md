@@ -1,10 +1,10 @@
 # [level 0] 옷가게 할인 받기 - 120818 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120818?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120818) 
 
 ### 성능 요약
 
-메모리: 75 MB, 시간: 0.13 ms
+메모리: 78.2 MB, 시간: 0.04 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 10월 06일 00:39:40
+2024년 11월 30일 14:29:38
 
 ### 문제 설명
 

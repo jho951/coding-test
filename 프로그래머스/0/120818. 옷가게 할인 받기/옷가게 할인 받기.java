@@ -8,8 +8,8 @@ class Solution {
         }else if(price >= 100000){
              answer = price - price * 0.05;
         }else{
-            answer = price;
+            answer =  price;
         }
-        return (int) answer;
+        return (int)answer;
     }
 }
