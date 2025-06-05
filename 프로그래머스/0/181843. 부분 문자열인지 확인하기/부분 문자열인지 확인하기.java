@@ -12,7 +12,6 @@ class Solution {
             }
              if (match) return 1;
         }
-
         return 0;
     }
 }
