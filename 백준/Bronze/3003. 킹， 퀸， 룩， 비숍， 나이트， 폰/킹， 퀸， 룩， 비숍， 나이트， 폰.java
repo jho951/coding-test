@@ -1,23 +1,31 @@
-import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
-	public static void main(String[] args)throws IOException {
+	public static void main(String[] args) throws IOException {
+		final int KING = 1;
+		final int QUEEN = 1;
+		final int ROOK = 2;
+		final int BISHOP = 2;
+		final int KNIGHT = 2;
+		final int PAWN = 8;
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
+
 		int king = Integer.parseInt(st.nextToken());
 		int queen = Integer.parseInt(st.nextToken());
-		int rock = Integer.parseInt(st.nextToken());
-		int vi = Integer.parseInt(st.nextToken());
+		int rook = Integer.parseInt(st.nextToken());
+		int bishop = Integer.parseInt(st.nextToken());
 		int knight = Integer.parseInt(st.nextToken());
-		int porn = Integer.parseInt(st.nextToken());
-		System.out.print(1 - king + " ");
-		System.out.print(1 - queen+ " ");
-		System.out.print(2 - rock+ " ");
-		System.out.print(2 - vi+ " ");
-		System.out.print(2 - knight+ " ");
-		System.out.print(8 - porn+ " ");
+		int pawn = Integer.parseInt(st.nextToken());
+		System.out.print(KING - king + " ");
+		System.out.print(QUEEN - queen + " ");
+		System.out.print(ROOK - rook + " ");
+		System.out.print(BISHOP - bishop + " ");
+		System.out.print(KNIGHT - knight + " ");
+		System.out.print(PAWN - pawn + " ");
 	}
 }
