@@ -3,7 +3,7 @@ class Solution {
         int answer = 0;
         if(a == b && b == c){
             return (a + b + c) * (a*a + b*b + c*c ) * (a*a*a + b*b*b + c*c*c);
-        }else if( a!= b && b!= c && c!= a){
+        }else if( a!= b && b != c && c!= a){
             return (a + b + c);
         }else{
          return (a + b + c) * (a*a + b*b + c*c);
