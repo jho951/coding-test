@@ -1,0 +1,12 @@
+-- 코드를 입력하세요
+SELECT
+  B.USER_ID,
+  B.NICKNAME,
+  SUM(A.PRICE) AS TOTAL_SALES
+FROM USED_GOODS_BOARD AS A
+JOIN USED_GOODS_USER  AS B
+  ON A.WRITER_ID = B.USER_ID
+WHERE A.STATUS = 'DONE'                      -- 완료된 거래만
+GROUP BY B.USER_ID, B.NICKNAME               -- 회원별 집계
+HAVING SUM(A.PRICE) >= 700000                -- 총금액 70만 이상
+ORDER BY TOTAL_SALES ASC;       
