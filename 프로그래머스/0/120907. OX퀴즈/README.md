@@ -1,10 +1,10 @@
 # [level 0] OX퀴즈 - 120907 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120907) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120907?language=java) 
 
 ### 성능 요약
 
-메모리: 33.5 MB, 시간: 0.19 ms
+메모리: 83.9 MB, 시간: 12.93 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 09월 07일 23:55:09
+2025년 09월 08일 13:21:34
 
 ### 문제 설명
 
