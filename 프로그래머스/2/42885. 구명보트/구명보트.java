@@ -1,21 +1,42 @@
-import java.util.*;
-class Solution {
-    
-    public int solution(int[] people, int limit) {
-        Arrays.sort(people);         
-        int i = 0;                         
-        int j = people.length - 1;         
-        int boats = 0;
+import java.util.Arrays;
 
+/**
+ * 주어진 구명보트 한도 내에서 모든 사람을 구출하는 데 필요한 최소 구명보트 수를 계산합니다.
+ * 이 함수는 두 포인터를 사용하는 그리디 알고리즘을 활용합니다.
+ */
+class Solution {
+    /**
+     * @param people 사람들의 몸무게를 담은 배열
+     * @param limit 구명보트의 무게 제한
+     * @return 모든 사람을 구출하는 데 필요한 최소 구명보트 수
+     */
+    public int solution(int[] people, int limit) {
+        // 1. 사람들의 몸무게를 오름차순으로 정렬합니다.
+        // 그리디 전략을 위해 가장 가벼운 사람과 가장 무거운 사람을 짝짓기 쉽게 하기 위함입니다.
+        Arrays.sort(people);
+
+        int answer = 0;
+        int i = 0; // 가장 가벼운 사람을 가리키는 포인터 (배열의 시작)
+        int j = people.length - 1; // 가장 무거운 사람을 가리키는 포인터 (배열의 끝)
+
+        // 2. 두 포인터가 교차하거나 만나기 전까지 반복합니다.
         while (i <= j) {
+            // 3. 가장 가벼운 사람(i)과 가장 무거운 사람(j)을 함께 태울 수 있는지 확인합니다.
             if (people[i] + people[j] <= limit) {
-                i++;                       
-                j--;
+                // 함께 태울 수 있다면, 두 사람 모두 구출된 것이므로 포인터를 모두 이동시킵니다.
+                i++; // 다음으로 가벼운 사람
+                j--; // 다음으로 무거운 사람
             } else {
-                j--;                       
+                // 함께 태울 수 없다면, 가장 무거운 사람(j)은 혼자 타야 합니다.
+                // 왜냐하면 가장 무거운 사람(j)이 가장 가벼운 사람(i)과도 같이 탈 수 없다면,
+                // 다른 누구와도 같이 탈 수 없기 때문입니다. (그리디 선택)
+                j--; // 가장 무거운 사람만 이동
             }
-            boats++;                      
+
+            // 4. 어떤 경우든 구명보트 하나를 사용했으므로 카운트를 증가시킵니다.
+            answer++;
         }
-        return boats;
+
+        return answer;
     }
 }
