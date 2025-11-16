@@ -4,7 +4,7 @@ def solution(arr, divisor):
         if num % divisor == 0:
             answer.append(num)
     
-    if len(answer) == 0:
+    if not answer:
         answer.append(-1)
     else:
         answer.sort()
