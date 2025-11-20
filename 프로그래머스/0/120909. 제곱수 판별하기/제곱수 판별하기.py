@@ -1,7 +1,5 @@
-import math
-
 def solution(n):
-    if math.sqrt(n) == int(math.sqrt(n)):
+    if n ** 0.5 == int(n ** 0.5):
         answer = 1
     else:
         answer = 2
