@@ -1,5 +1,6 @@
 def solution(arr1, arr2):
     answer = []
+    ass = 0
     for a, b in zip(arr1, arr2):
         row_result = []
         for c, d in zip(a, b):
