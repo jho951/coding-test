@@ -1,10 +1,10 @@
 # [level 0] 배열에서 문자열 대소문자 변환하기 - 181875 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181875?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181875?language=python3) 
 
 ### 성능 요약
 
-메모리: 80.2 MB, 시간: 0.05 ms
+메모리: 9.34 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 12월 09일 17:46:35
+2025년 11월 28일 14:38:07
 
 ### 문제 설명
 
