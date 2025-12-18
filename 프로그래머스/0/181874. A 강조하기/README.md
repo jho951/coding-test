@@ -1,10 +1,10 @@
 # [level 0] A 강조하기 - 181874 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181874) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181874?language=python3) 
 
 ### 성능 요약
 
-메모리: 84.8 MB, 시간: 0.07 ms
+메모리: 9.26 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 02월 17일 11:18:49
+2025년 12월 18일 22:46:00
 
 ### 문제 설명
 
