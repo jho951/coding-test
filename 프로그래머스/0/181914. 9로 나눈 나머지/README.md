@@ -1,10 +1,10 @@
 # [level 0] 9로 나눈 나머지 - 181914 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181914) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181914?language=python3) 
 
 ### 성능 요약
 
-메모리: 37.1 MB, 시간: 5.04 ms
+메모리: 10.1 MB, 시간: 16.45 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 01월 01일 23:45:30
+2025년 12월 24일 00:18:48
 
 ### 문제 설명
 
