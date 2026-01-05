@@ -1,10 +1,10 @@
 # [level 0] 꼬리 문자열 - 181841 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181841?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181841?language=python3) 
 
 ### 성능 요약
 
-메모리: 80.1 MB, 시간: 1.52 ms
+메모리: 9.23 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 12월 19일 00:05:28
+2026년 01월 05일 23:32:43
 
 ### 문제 설명
 
