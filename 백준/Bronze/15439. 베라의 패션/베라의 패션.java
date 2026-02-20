@@ -1,11 +1,17 @@
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        // 상의 N개에 대해, 자신과 다른 색의 하의 N-1개를 매치
-        System.out.println(n * (n - 1));
-        sc.close();
-    }
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static StringTokenizer st;
+	static String next() throws IOException {
+		while (st == null || !st.hasMoreTokens()) st = new StringTokenizer(br.readLine());
+		return st.nextToken();
+	}
+	static int nextInt() throws IOException { return Integer.parseInt(next()); }
+
+	public static void main(String[] args) throws Exception {
+		int N = nextInt();
+		System.out.print(N * (N - 1));
+	}
 }
