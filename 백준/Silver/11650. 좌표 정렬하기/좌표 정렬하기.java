@@ -1,0 +1,32 @@
+/**
+ * 기본 템플릿
+ */
+import java.io.*;
+import java.util.*;
+
+public class Main {
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static StringTokenizer st;
+	static String next() throws IOException {
+		while (st == null || !st.hasMoreTokens()) st = new StringTokenizer(br.readLine());
+		return st.nextToken();
+	}
+	static int nextInt() throws IOException { return Integer.parseInt(next()); }
+
+	public static void main(String[] args) throws Exception {
+		int N = nextInt();
+		Map<Integer, List<Integer>> map = new TreeMap<>();
+		for (int i = 0; i < N; i++) {
+			map.computeIfAbsent(nextInt(),k -> new ArrayList<>()).add(nextInt());
+		}
+		map.values().forEach(Collections::sort);
+		StringBuilder sb = new StringBuilder();
+		for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
+
+			for(Integer value : entry.getValue()) {
+				sb.append(entry.getKey()).append(" ").append(value).append("\n");
+			}
+		}
+		System.out.println(sb);
+	}
+}
