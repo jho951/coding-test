@@ -24,7 +24,7 @@ public class Main {
 			else {map.put(person, status);}
 		}
 		List<String> remaining = new ArrayList<>(map.keySet());
-		Collections.sort(remaining, Collections.reverseOrder());
+		remaining.sort(Collections.reverseOrder());
 		for(String person : remaining){sb.append(person).append("\n");}
 		System.out.println(sb);
 	}
