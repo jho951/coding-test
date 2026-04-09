@@ -1,0 +1,44 @@
+import java.io.*;
+import java.math.BigInteger;
+import java.util.*;
+
+public class Main {
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static StringTokenizer st;
+
+	static String next() throws IOException {
+		while (st == null || !st.hasMoreElements()) {
+			String line = br.readLine();
+			st = new StringTokenizer(line);
+		}
+		return st.nextToken();
+	}
+
+	static int nextInt() throws IOException {
+		return Integer.parseInt(next());
+	}
+	static float nextFloat() throws IOException {
+		return Float.parseFloat(next());
+	}
+
+	public static void main(String[] args) throws Exception {
+		char N = next().charAt(0);
+		switch (N) {
+			case 'M':
+				System.out.println("MatKor");
+				break;
+			case 'W':
+				System.out.println("WiCys");
+				break;
+			case 'C':
+				System.out.println("CyKor");
+				break;
+			case 'A':
+				System.out.println("AlKor");
+				break;
+			case '$':
+				System.out.println("$clear");
+				break;
+		}
+	}
+}
