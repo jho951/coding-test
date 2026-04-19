@@ -6,7 +6,6 @@ class Solution {
         }
         return answer;
     }
-    
     public static int gcd(int a, int b) {
         while (b != 0) {
             int r = a % b;
@@ -15,7 +14,6 @@ class Solution {
         }
         return a;
     }
-
     public static int lcm(int a, int b) {
         return (a * b) / gcd(a, b);
     }
