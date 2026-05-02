@@ -21,8 +21,4 @@ public class Solution {
 
         return Integer.parseInt(s);
     }
-
-    public static void main(String[] args) {
-        System.out.println(solution("one4seveneight")); // 예시 입력
-    }
 }
