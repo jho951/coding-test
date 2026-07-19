@@ -1,0 +1,17 @@
+WITH RECURSIVE Generation_CTE AS (
+    -- 1세대 (부모가 없는 개체)
+    SELECT ID, PARENT_ID, 1 AS GENERATION
+    FROM ECOLI_DATA
+    WHERE PARENT_ID IS NULL
+    
+    UNION ALL
+    
+    -- 자식 개체 (부모의 세대 + 1)
+    SELECT E.ID, E.PARENT_ID, G.GENERATION + 1
+    FROM ECOLI_DATA E
+    JOIN Generation_CTE G ON E.PARENT_ID = G.ID
+)
+SELECT ID
+FROM Generation_CTE
+WHERE GENERATION = 3
+ORDER BY ID ASC;
